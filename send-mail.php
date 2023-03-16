@@ -3,8 +3,8 @@ if(!empty($_POST)){
 	$name = trim($_POST["name"]);
 	$email = trim($_POST["email"]);
 	$message = trim($_POST["message"]);		
-	$recipient = "ifoxsolutions.social@gmail.com"; // to email address
-	$sender = 'wordpress@gogstbill.com'; //from email address
+	$recipient = "fuzzgruble@gmail.com"; // to email address
+	$sender = 'job@ianwhinkle.com'; //from email address
 	$subject = 'Inquiry from website'; //email subject
 	$message = '
 		<html>
