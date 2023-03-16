@@ -460,10 +460,8 @@ body {
 /* 4. HOME PAGE */
 /*------------------------------------------------------------------------------------------*/
 #home-page {
-  background-image: url('../img/pexels.jpeg');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background: rgb(50,48,89);
+  background: linear-gradient(90deg, rgba(50,48,89,1) 0%, rgba(95,95,117,1) 46%, rgba(91,56,121,1) 100%);
 	overflow: hidden;
 }
 #particles-js{
