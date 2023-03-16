@@ -66,7 +66,7 @@ $(window).on("load", function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
     new Typed('.home_title #subtitle', {
-        strings: ['Hi, I am a creative, conceptualized and certified UI/UX expert.', 'I like to do UI Designing, Animation and Prototyping.', 'I deliver beautiful and usable designs for Websites and Apps.'],
+        strings: ['Experienced Support Analyst skilled in customer escalations, problem-solving, and technical adaptability.', 'Well-rounded team member with expertise in customer service, training and team collaboration.', 'Strong experience in technical support, application testing, and software proficiency.'],
         typeSpeed: 50,
         backSpeed: 20,
         smartBackspace: true,
@@ -142,7 +142,7 @@ $(function() {
                 return item.el.attr('title') + '<small>by Alex Smith</small>';
             }
         }
-    });	
+    });
     $('.popup-youtube, .popup-vimeo').magnificPopup({
         disableOn: 700,
         type: 'iframe',
@@ -157,7 +157,7 @@ $(function() {
 		var email = $("#email").val();
 		$("#name").css("border-color", "#e8eaf6");
 		$("#email").css("border-color", "#e8eaf6");
-		
+
 		if($("#name").val() == ""){
 			$("#name").css("border-color", "red");
 			$("#name").focus();
@@ -173,11 +173,11 @@ $(function() {
 			$("#email").focus();
 			isValid = false;
 		}
-		
+
 		if(isValid){
 			var form_data = $("#cf-form").serialize();
 			$.ajax({
-				type: "POST", 
+				type: "POST",
 				url: "send-mail.php",
 				dataType: "json",
 				data: form_data
