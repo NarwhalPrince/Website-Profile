@@ -2,7 +2,7 @@
 Version: 1.0
 1.  FONTS & RESET & CLEARFIX
 2.  PAGE TITLE & LOGO
-3.  MENU	
+3.  MENU
 4.  HOME PAGE
 5.  PROFILE PAGE
 6.  RESUME PAGE
@@ -13,12 +13,12 @@ Version: 1.0
 11. OTHER PAGE SETTING
 12. RESPONSIVE
 */
- 
+
 /*------------------------------------------------------------------------------------------*/
 /* 1. FONTS & RESET & CLEARFIX */
 /*------------------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i');
-a {	
+a {
 	color: #5d93d8;
 	color: #4d4f5f;
 	outline: none;
@@ -28,18 +28,18 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	outline: 0;
-	color: #f1c311;	
+	color: #aa80ff;
 	outline: none;
 }
 .js body {
 	opacity: 0;
-	transition: opacity 0.3s;		
+	transition: opacity 0.3s;
 }
 .js body.render {
 	opacity: 1;
 }
 p {
-    margin: 0 0 20px 0;	
+    margin: 0 0 20px 0;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
@@ -68,7 +68,7 @@ body {
 /* 2. PAGE TITLE & LOGO */
 /*------------------------------------------------------------------------------------------*/
 .page-title {
-    color: #fbd54a;
+    color: #aa80ff;
     display: inline-block;
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
@@ -76,7 +76,7 @@ body {
     padding: 0 12px 8px 12px;
     position: relative;
     text-transform: uppercase;
-	line-height: 0.9;	
+	line-height: 0.9;
 }
 .page-title:before {
     content: '';
@@ -86,19 +86,19 @@ body {
     width: 100%;
     top: 20px;
     left: 0;
-    position: absolute;	
+    position: absolute;
 }
 .page_title {
-    padding: 100px 0;    
+    padding: 100px 0;
 }
 .section-title {
-	color: #3d3d3d;  
+	color: #3d3d3d;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    padding: 0px 0 50px 0;    
+    padding: 0px 0 50px 0;
     text-transform: uppercase;
-	line-height: 0.9;	
+	line-height: 0.9;
 }
 /*------------------------------------------------------------------------------------------*/
 /* 3. MENU */
@@ -451,16 +451,16 @@ body {
 	fill: #1d1d1f;
 }
 .shape-overlays__path:nth-of-type(3) {
-	fill: #fbd54a;
+	fill: #aa80ff;
 }
 .shape-overlays__path:nth-of-type(4) {
-	fill: #fbd54a;
+	fill: #aa80ff;
 }
 /*------------------------------------------------------------------------------------------*/
 /* 4. HOME PAGE */
 /*------------------------------------------------------------------------------------------*/
-#home-page { 
-  background-image: url('../img/pexels.jpeg');	
+#home-page {
+  background-image: url('../img/pexels.jpeg');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -468,7 +468,7 @@ body {
 }
 #particles-js{
   width: 100%;
-  height: 100%;    
+  height: 100%;
 }
 #home-page .container {
     display: table;
@@ -491,7 +491,7 @@ body {
     color: #fff;
 }
 .home_title #subtitle{
-    color: #fbd54a;
+    color: #aa80ff;
     font-size: 32px;
     height: 40px;
     margin: 20px 0;
@@ -507,10 +507,10 @@ body {
 /*------------------------------------------------------------------------------------------*/
 /* 5. PROFILE PAGE */
 /*------------------------------------------------------------------------------------------*/
-#profile-page { 
-  background-color: #fff;	  
+#profile-page {
+  background-color: #fff;
 }
-.profile-data li{ 
+.profile-data li{
     display: table;
 }
 .profile-data {
@@ -521,7 +521,7 @@ body {
 .profile-data .fa {
     margin-right: 10px;
 	font-size: 40px;
-	color: #f1c311;
+	color: #aa80ff;
 	width: 30px;
 }
 .profile-data li {
@@ -539,45 +539,45 @@ body {
 	vertical-align: middle;
 }
 .profile-image{
-	width:100%;	
+	width:100%;
 }
 .interest-list .item {
-  background: #3d3d3d;  
+  background: #3d3d3d;
   height: 160px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 .interest-list .item-icon {
-  color: #f1c311;
+  color: #aa80ff;
   display: block;
   font-size: 45px;
-  padding: 30px 0 10px 0;  
+  padding: 30px 0 10px 0;
 }
 .interest-list .item-title {
   color: #fff;
-  font-size: 18px;  
-  text-transform: uppercase;  
+  font-size: 18px;
+  text-transform: uppercase;
 }
 .cv-btn {
     text-align: center;
     padding: 10px;
-    border: 3px solid #f1c311;
-    color: #f1c311;
+    border: 3px solid #aa80ff;
+    color: #aa80ff;
     display: block;
-    margin-bottom: 15px;	
-	margin-top: 15px;		
+    margin-bottom: 15px;
+	margin-top: 15px;
 }
 .cv-btn:hover {
-	background: #f1c311;
+	background: #aa80ff;
 	color: #fff;
 }
-.cv-btn i {    
+.cv-btn i {
     margin-right: 10px;
 }
 /*------------------------------------------------------------------------------------------*/
 /* 6. RESUME PAGE */
 /*------------------------------------------------------------------------------------------*/
-#resume-page { 
-  background-color: #fff;	  
+#resume-page {
+  background-color: #fff;
 }
 .resume-details{
   position: relative;
@@ -602,7 +602,7 @@ body {
   bottom: 0;
 }
 .resume-details .item{
-  clear: both;  
+  clear: both;
 }
 .resume-details .item .box{
   background: #3d3d3d;
@@ -660,7 +660,7 @@ body {
   padding-top: 9px;
   padding-bottom: 9px;
   text-transform: capitalize;
-  color: #f1c311;
+  color: #aa80ff;
 }
 .resume-details .item .col-sm-6:nth-child(odd){
   padding-right: 30px;
@@ -699,8 +699,8 @@ body {
 /*------------------------------------------------------------------------------------------*/
 /* 7. SERVICES PAGE */
 /*------------------------------------------------------------------------------------------*/
-#services-page { 
-  background-color: #fff;	  
+#services-page {
+  background-color: #fff;
 }
 .serviceBox{
     padding: 30px 30px 30px 90px;
@@ -712,7 +712,7 @@ body {
 	margin: 0 0 30px 0;
 }
 .serviceBox:hover{
-    background: #f1c311;
+    background: #aa80ff;
 }
 .serviceBox:hover .title{
    color: #fff;
@@ -735,7 +735,7 @@ body {
 }
 .serviceBox .service-icon{
     font-size: 50px;
-    color: #fbd54a;
+    color: #aa80ff;
     position: absolute;
     top: 40px;
     left: 20px;
@@ -763,8 +763,8 @@ body {
 /*------------------------------------------------------------------------------------------*/
 /* 8. PORTFOLIO PAGE */
 /*------------------------------------------------------------------------------------------*/
-#portfolio-page { 
-  background-color: #fff;	  
+#portfolio-page {
+  background-color: #fff;
 }
 .portfolio-grid {
 	position: relative;
@@ -871,19 +871,19 @@ body {
 /*------------------------------------------------------------------------------------------*/
 /* 9. CONTACT PAGE */
 /*------------------------------------------------------------------------------------------*/
-#contact-page { 
-  background-color: #fff;	  
+#contact-page {
+  background-color: #fff;
 }
 .contact-icon {
-    color: #fbd54a;
+    color: #aa80ff;
     font-size: 60px;
 }
 .contact-title {
     font-weight: 700;
     padding-top: 20px;
     color: #37474f;
-    font-size: 25px;        
-    text-transform: uppercase;    
+    font-size: 25px;
+    text-transform: uppercase;
 }
 .contact-box{
 	margin: 0 0 30px 0;
@@ -900,7 +900,7 @@ body {
     display: block;
 }
 .cf-form-control {
-    border: 2px solid #e8eaf6;    
+    border: 2px solid #e8eaf6;
     font-size: 15px;
     margin-bottom: 8px;
     padding: 19px 15px;
@@ -908,18 +908,18 @@ body {
 }
 .cf-submit {
     background: #ffffff;
-    border-color: #f1c311;
-    color: #f1c311; 
+    border-color: #aa80ff;
+    color: #aa80ff;
     font-size: 19px;
     font-weight: 700;
     max-width: 235px;
     max-height: 65px;
-    text-transform: uppercase;	
+    text-transform: uppercase;
 	margin: 0 auto;
-    display: table;	
+    display: table;
 }
 .cf-submit:hover {
-    background: #f1c311;
+    background: #aa80ff;
     color: #ffffff;
 }
 .cf-form-control:focus, .cf-form-control:active {
@@ -950,7 +950,7 @@ body {
    top: 0;
    left: 0;
    position: fixed;
-   display: block;   
+   display: block;
    background-color: #fff;
    z-index: 999999;
    text-align: center;
@@ -1009,7 +1009,7 @@ body {
 	overflow: hidden;
 }
 .sub-section{
-    clear: both; 
+    clear: both;
 	margin-bottom: 50px;
 }
 /*------------------------------------------------------------------------------------------*/
@@ -1029,15 +1029,15 @@ body {
 	}
 
 }
-@media (max-width: 767px) {		
+@media (max-width: 767px) {
 	#content-container {
 		padding: 0px;
-	}			
+	}
 }
 /* LOGO */
 @media screen and (max-width: 767px) {
 	header .logo a {
-		left: 15px;			
+		left: 15px;
 	}
 }
 /* MENU */
@@ -1047,80 +1047,80 @@ body {
 		top: 15px;
 		right: 36px;
 		transform: scale(0.75);
-	}	
+	}
 }
 @media screen and (max-width: 767px) {
 	.global-menu__item {
-		font-size: 35px;    
+		font-size: 35px;
 		line-height: 45px;
 	}
 	.hamburger {
-		right: 15px;		
-		top: 15px;		
-	}	
+		right: 15px;
+		top: 15px;
+	}
 }
 @media screen and (max-width: 374px) {
 	.global-menu__item {
-		font-size: 25px;    
+		font-size: 25px;
 		line-height: 35px;
 		text-align: center;
 	}
 	.hamburger {
-		right: 15px;		
-		top: 15px;		
-	}	
+		right: 15px;
+		top: 15px;
+	}
 }
 /* PAGE TITKE */
 @media screen and (max-width: 1023px) {
 	.page_title {
 		padding: 100px 0;
 	}
-	.page-title {    
-		font-size: 50px;    
+	.page-title {
+		font-size: 50px;
 	}
 }
 @media screen and (max-width: 768px) {
 	.page_title {
 		padding: 130px 0 35px 0;
 	}
-	.page-title {    
-		font-size: 45px;    
+	.page-title {
+		font-size: 45px;
 	}
 }
-@media screen and (max-width: 374px) {	
-	.page-title {    
-		font-size: 35px;    
+@media screen and (max-width: 374px) {
+	.page-title {
+		font-size: 35px;
 	}
 }
 /* HOME PAGE */
 @media screen and (max-width: 1023px) {
 	.home_title h1 {
-		font-size: 80px; 
+		font-size: 80px;
 	}
-	.home_title #subtitle, .typed-cursor {    
-		font-size: 30px;		
-	}	
-	.home_title {    
-		min-height: 200px;		
+	.home_title #subtitle, .typed-cursor {
+		font-size: 30px;
+	}
+	.home_title {
+		min-height: 200px;
 		max-width: 500px;
 		margin: 0 auto;
-	}			
+	}
 }
 @media screen and (max-width: 767px) {
 	.home_title h1 {
-		font-size: 50px; 
-	}	
+		font-size: 50px;
+	}
 }
 @media screen and (max-width: 374px) {
 	.home_title h1 {
-		font-size: 40px; 
+		font-size: 40px;
 	}
-	.home_title #subtitle,.typed-cursor {  
+	.home_title #subtitle,.typed-cursor {
 		font-size: 20px;
-	}	
-	.home_title {    
+	}
+	.home_title {
 		min-height: 150px;
-	}	
+	}
 }
 /* PROFILE PAGE */
 @media screen and (max-width: 991px) {
@@ -1130,14 +1130,14 @@ body {
 }
 /* RESUME PAGE */
 @media screen and (max-width: 767px) {
-	.resume-details .item:nth-child(odd) .box:before, 
-	.resume-details .item:nth-child(odd) .box:after, 
-	.resume-details .item:nth-child(even) .box:before, 
+	.resume-details .item:nth-child(odd) .box:before,
+	.resume-details .item:nth-child(odd) .box:after,
+	.resume-details .item:nth-child(even) .box:before,
 	.resume-details .item:nth-child(even) .box:after {
 		content: '';
 		display: none;
 	}
-	.resume-details:before, 
+	.resume-details:before,
 	.resume-details:after {
 		content: '';
 		display: none;
@@ -1166,7 +1166,7 @@ body {
 		-o-transform: translateX(0);
 		transform: translateX(0);
 	}
-	.resume-details .item .box,	
+	.resume-details .item .box,
 	.resume-details .item:nth-child(even) .box {
 		float: none;
 		margin-bottom: 0px;
@@ -1177,7 +1177,7 @@ body {
 		background: #f5f5f5;
 		margin-bottom: 50px;
 	}
-	.resume-details .description{    
+	.resume-details .description{
 		margin-bottom: 10px;
 	}
 }
@@ -1207,7 +1207,7 @@ body {
 	.portfolio-item.wide,
 	.portfolio-item.wide-tall {
 		width: 100%;
-	}	
+	}
 }
 @media (max-width: 500px) {
 	.portfolio-item,
