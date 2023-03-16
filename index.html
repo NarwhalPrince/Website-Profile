@@ -451,18 +451,52 @@
 						<div class="page_title text-center">
                             <h2 class="page-title">CONTACT</h2>
                         </div>
-						 <div class="sub-section">
-							<div class="row">
-							<div class="contact-info text-center">
-								<div class="col-xs-12 col-sm-6 contact-box">
-									<div class="contact-icon"><i class="fa fa-phone-square"></i></div>
-									<p class="contact-title">Phone</p>
-									<span class="contact-texts">+1 512-395-7507</span>
-								</div>
-								<div class="col-xs-12 col-sm-6 contact-box">
-									<div class="contact-icon"><i class="fa fa-envelope-square"></i></div>
-									<p class="contact-title">Email</p>
-									<span class="contact-texts"><a href="#">job@ianwhinkle.com</a></span>
+                        <div class="sub-section">
+                          <div class="row">
+                            <div class="contact-info text-center">
+                              <div class="col-xs-12 col-sm-6 contact-box">
+                                <div class="contact-icon"><i class="fa fa-phone-square"></i></div>
+                                <p class="contact-title">Phone</p>
+                                <span class="contact-texts" onclick="copyToClipboard('phone')">
+                                  <a href="#" id="phone">+1 512-395-7507</a>
+                                </span>
+                                <div id="copiedPopupPhone" style="display:none;">Copied to clipboard!</div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6 contact-box">
+                                <div class="contact-icon"><i class="fa fa-envelope-square"></i></div>
+                                <p class="contact-title">Email</p>
+                                <span class="contact-texts" onclick="copyToClipboard('email')">
+                                  <a href="#" id="email">job@ianwhinkle.com</a>
+                                </span>
+                                <div id="copiedPopupEmail" style="display:none;">Copied to clipboard!</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <script>
+                        function copyToClipboard(id) {
+                          var element = document.getElementById(id); // Get the element
+                          var parentElement = element.parentElement; // Get the parent element
+                          var text = element.innerText; // Get the text to copy
+                          var range = document.createRange(); // Create a range object
+                          range.selectNode(element); // Select the contents of the element
+                          window.getSelection().removeAllRanges(); // Remove any current selections
+                          window.getSelection().addRange(range); // Add the new range to the selection
+                          document.execCommand("copy"); // Copy the selected contents to the clipboard
+                          window.getSelection().removeAllRanges(); // Clear the selection
+
+                          var popup = document.getElementById("copiedPopup" + id.charAt(0).toUpperCase() + id.slice(1)); // Get the popup element
+                          popup.style.display = "block"; // Show the popup
+                          popup.style.top = (parentElement.offsetTop + parentElement.offsetHeight + window.scrollY) + "px"; // Position the popup below the element, taking into account the scroll position
+                          popup.style.left = (parentElement.offsetLeft + parentElement.offsetWidth / 2) + "px"; // Position the popup horizontally
+                          setTimeout(function() {
+                            popup.style.display = "none"; // Hide the popup after a short delay
+                          }, 2000);
+                        }
+                        </script>
+
+
 								</div>
 
 							</div>

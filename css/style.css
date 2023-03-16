@@ -1010,6 +1010,34 @@ body {
     clear: both;
 	margin-bottom: 50px;
 }
+/* Copy to clipboard for email. */
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#copiedPopupPhone,
+#copiedPopupEmail {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: #ccb3ff;
+	padding: 5px 10px;
+	margin-top: 5px;
+  border-radius: 5px;
+	border: 1px solid #ccb3ff;
+	animation-name: fade-in-out;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
 /*------------------------------------------------------------------------------------------*/
 /* 12. RESPONSIVE */
 /*------------------------------------------------------------------------------------------*/
