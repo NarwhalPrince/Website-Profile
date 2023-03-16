@@ -462,40 +462,35 @@
 								<div class="col-xs-12 col-sm-6 contact-box">
 									<div class="contact-icon"><i class="fa fa-envelope-square"></i></div>
 									<p class="contact-title">Email</p>
-									<span class="contact-texts"><a href="#">job@ianwhinkle.com</a></span>
+									<span class="contact-texts"><a  href="#" onclick="copyToClipboard()" id="Email">job@ianwhinkle.com</a></span>
+                  <div id="copiedPopup" style="display:none;">Copied to clipboard!</div>
+
+
+                  <script>function copyToClipboard() {
+  var element = document.getElementById("Email"); // Get the element
+  var parentElement = element.parentElement; // Get the parent element
+  var range = document.createRange(); // Create a range object
+  range.selectNode(element); // Select the contents of the element
+  window.getSelection().removeAllRanges(); // Remove any current selections
+  window.getSelection().addRange(range); // Add the new range to the selection
+  document.execCommand("copy"); // Copy the selected contents to the clipboard
+  window.getSelection().removeAllRanges(); // Clear the selection
+
+  var popup = document.getElementById("copiedPopup"); // Get the popup element
+  popup.style.display = "block"; // Show the popup
+  popup.style.top = (parentElement.offsetTop + parentElement.offsetHeight + window.scrollY) + "px"; // Position the popup below the element, taking into account the scroll position
+  popup.style.left = (parentElement.offsetLeft + parentElement.offsetWidth / 2) + "px"; // Position the popup horizontally
+  setTimeout(function() {
+    popup.style.display = "none"; // Hide the popup after a short delay
+  }, 2000);
+}
+</script>
 								</div>
 
 							</div>
 							</div>
 						 </div>
-						 <div class="sub-section">
-							<div class="row">
-								<div class="col-xs-12">
-									<h3 class="section-title text-center">LET'S GET STARTED</h3>
-									<form action="/" method="post" id="cf-form" class="cf-form">
-										<p>
-											<span class="cf-form-control-wrap name">
-												<input type="text" id="name" name="name" value="" size="40" class="cf-form-control cf-text" aria-invalid="false" placeholder="Your name" >
-											</span>
-										</p>
-										<p>
-											<span class="cf-form-control-wrap email">
-												<input type="email" id="email" name="email" value="" size="40" class="cf-form-control cf-email" aria-invalid="false" placeholder="Your email" >
-											</span>
-										</p>
-										<p>
-											<span class="cf-form-control-wrap message">
-												<textarea id="message" name="message" cols="40" rows="10" class="cf-form-control cf-textarea" aria-invalid="false" placeholder="Your message"></textarea>
-											</span>
-										</p>
-										<p>
-											<input type="submit" id="submit" name="submit" value="Submit" class="cf-form-control cf-submit">
-										</p>
-									<div class="contact-message"></div>
-									</form>
-								</div>
-							</div>
-                        </div>
+
 						<div class="sub-section">
 							<div class="row">
 								<div class="col-xs-12 text-center">
