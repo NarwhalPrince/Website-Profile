@@ -66,11 +66,13 @@ $(window).on("load", function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
     new Typed('.home_title #subtitle', {
-        strings: ['Customer Whisperer & QA Fanatic: Turning tech troubles into triumphs and diving headfirst into the captivating realm of software testing.', 'Tech Chameleon: Mastering the art of adaptability, sprinkling customer service magic, and nurturing a blossoming love for Quality Assurance.', 'The All-Rounder Extraordinaire: Seamlessly blending tech-savvy, retail know-how, and an unquenchable thirst for software perfection through Quality Assurance.'],
-        typeSpeed: 50,
-        backSpeed: 20,
+        strings: ['Customer Whisperer &amp; QA Fanatic: Turning tech troubles into triumphs and diving headfirst into the captivating realm of software testing.', 'Tech Chameleon: Mastering the art of adaptability, sprinkling customer service magic, and nurturing a blossoming love for Quality Assurance.', 'The All-Rounder Extraordinaire: Seamlessly blending tech-savvy, retail know-how, and an unquenchable thirst for software perfection through Quality Assurance.'],
+        typeSpeed: 20,
+        backSpeed: 10,
         smartBackspace: true,
-        loop: true
+        loop: true,
+        loopCount: Infinity,
+        startDelay: 1000 // Increase start delay to 1000ms (1 second)
     });
 });
 $(function() {
@@ -197,4 +199,24 @@ $(function() {
 function validateEmail(email) {
 	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());
+}
+
+function copyToClipboard(id) {
+  var element = document.getElementById(id); // Get the element
+  var parentElement = element.parentElement; // Get the parent element
+  var text = element.innerText; // Get the text to copy
+  var range = document.createRange(); // Create a range object
+  range.selectNode(element); // Select the contents of the element
+  window.getSelection().removeAllRanges(); // Remove any current selections
+  window.getSelection().addRange(range); // Add the new range to the selection
+  document.execCommand("copy"); // Copy the selected contents to the clipboard
+  window.getSelection().removeAllRanges(); // Clear the selection
+
+  var popup = document.getElementById("copiedPopup" + id.charAt(0).toUpperCase() + id.slice(1)); // Get the popup element
+  popup.style.display = "block"; // Show the popup
+  popup.style.top = (parentElement.offsetTop + parentElement.offsetHeight + window.scrollY) + "px"; // Position the popup below the element, taking into account the scroll position
+  popup.style.left = (parentElement.offsetLeft + parentElement.offsetWidth / 2) + "px"; // Position the popup horizontally
+  setTimeout(function() {
+    popup.style.display = "none"; // Hide the popup after a short delay
+  }, 2000);
 }
