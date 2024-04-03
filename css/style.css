@@ -1031,8 +1031,9 @@ body {
   }
 }
 
+#copiedPopupEmail2,
 #copiedPopupPhone,
-#copiedPopupEmail {
+#copiedPopupEmail1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1045,6 +1046,10 @@ body {
 	animation-name: fade-in-out;
 animation-duration: 2s;
 animation-fill-mode: forwards;
+}
+#copiedPopupEmail1{
+	margin-top: 25px;
+
 }
 /*------------------------------------------------------------------------------------------*/
 /* 12. RESPONSIVE */
