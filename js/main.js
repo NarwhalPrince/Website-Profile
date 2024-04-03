@@ -66,7 +66,7 @@ $(window).on("load", function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
     new Typed('.home_title #subtitle', {
-        strings: ['Customer Whisperer &amp; QA Fanatic: Turning tech troubles into triumphs and diving headfirst into the captivating realm of software testing.', 'Tech Chameleon: Mastering the art of adaptability, sprinkling customer service magic, and nurturing a blossoming love for Quality Assurance.', 'The All-Rounder Extraordinaire: Seamlessly blending tech-savvy, retail know-how, and an unquenchable thirst for software perfection through Quality Assurance.'],
+        strings: ['Security', 'Experience', 'Challenges', 'Skills', 'Collaboration', 'Quality'],
         typeSpeed: 20,
         backSpeed: 10,
         smartBackspace: true,
