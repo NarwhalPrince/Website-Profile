@@ -10,7 +10,9 @@
 ### MadCap Software, Inc.
 **Technical Support Analyst II**  
 *Apr. 2022 – Present, Austin, TX/Remote*  
-- Developed internal documentation and configured environments to demonstrate solutions for revenue-prohibitive challenges. 
+- Improved internal operating procedures and documentation standards.
+- Configured many complex test environments comprised of disparate system to replicate (and ultimately resolve) production-critical issues.
+- Continuous building and presenting of product demonstrations to highlight resolution of issues.
 - Strategically delegated tickets according to complexity and team member expertise, addressing customer escalations and high-priority issues with urgency and precision.
 - Implemented and maintained Git project integrations, Elasticsearch on IIS Servers, and Single Sign-On provisioning, ensuring seamless operations and enhanced user experience.
 - Collaborated with QA, DEV, and Customer Success departments to resolve issues and provide guidance, fostering teamwork and communication.
